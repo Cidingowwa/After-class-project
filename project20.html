@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Theme Background Demo</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            color: white;
+            text-align: center;
+        }
+        /* Header with linear gradient background */
+header {
+  background: linear-gradient(to right, #1a472a, #3c9d5d);
+  padding: 50px 0;
+}
+header h1 {
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+.animate-title{
+  animation: popIn 2s ease-in-out infinite alternate;
+
+}
+@keyframes popIn{
+  @keyframes popIn{
+  0%{
+    opacity: 0;
+    transform: translateY(-30px) scale(0.8);
+  }
+    50%{
+    opacity: 1;
+    transform: translateY(0) scale(1.05);
+  }
+     100%{
+    opacity: 0.5;
+    transform: translateY(0) scale(1);
+  }
+}
+}
+/* Section with forest image background and overlay text */
+.hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 60, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero h2 {
+  font-size: 3em;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  border-radius: 15px;
+  text-shadow: 2px 2px 6px black;
+}
+
+/* Section with radial gradient */
+.section {
+  background: radial-gradient(circle at center, #2f5d3f, #0f2f1a);
+  padding: 80px 20px;
+}
+.section p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.2em;
+  line-height: 1.7em;
+}
+
+/* Footer with color background and background-repeat example */
+footer {
+  background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+  background-color: #143d26;
+  background-repeat: repeat;
+  padding: 40px;
+  font-size: 0.9em;
+}
+</style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="animate-title">🌳 Welcome to the Forest</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Whisper of the Woods</h2>
+    </section>
+
+    <section class="section">
+        <p>
+            The forest breathes life into every corner of the earth. Its lush green canopy and tranquil sounds bring
+            peace to every soul that listens.
+            The sunlight filtering through leaves paints the ground in shades of gold and green. This background blends
+            gradients and textures inspired by nature.
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2025 Forest Theme Demo | Created with HTML & CSS only 🌿
+    </footer>
+
+</body>
+
+</html>
